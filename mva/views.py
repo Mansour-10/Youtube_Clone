@@ -16,6 +16,13 @@ def all_members(request):
     return HttpResponse(template.render(context, request))
 
 
+def info(request, id):
+  mymember = membership.objects.get(id=id)
+  template = loader.get_template('info.html')
+  context = {
+    'mymember': mymember,
+  }
+  return HttpResponse(template.render(context, request))
 
 
 

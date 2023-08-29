@@ -1,14 +1,19 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends "master.html" %} 
+{% load static %}
+
+
+{% block title %} Membership {% endblock %} 
+
+{% block content %}
 
 <h1>Membership</h1>
-  
+
 <ul>
   {% for x in mymembers %}
-    <li>{{ x.firstname }} {{ x.lastname }} {{ x.Monthly_fee }} {{ x.joined_date }}</li>
+  <li>
+    <span><img class="profiles" src="{% static 'img/2 (4).JPG' %}" alt=""/></span>
+    {{ x.firstname }} {{ x.lastname }} <a href="info/{{ x.id }}">more</a>
+  </li>
   {% endfor %}
 </ul>
-
-</body>
-</html>
+{% endblock %}

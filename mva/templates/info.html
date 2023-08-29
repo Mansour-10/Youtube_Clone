@@ -1,0 +1,20 @@
+{% extends "master.html" %}
+{% load static %}
+
+
+{% block title %}
+  Membership Info
+{% endblock %}
+
+{% block content %}
+
+<img src="{% static 'img/7 (9).JPG' %}" width="20%" alt="">
+
+<h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+  
+<p>Fee: {{ mymember.Monthly_fee }}</p>
+<p>Member since: {{ mymember.joined_date }}</p>
+
+<p>Back to <a href="/all_members">Membership</a></p>
+
+{% endblock %}
