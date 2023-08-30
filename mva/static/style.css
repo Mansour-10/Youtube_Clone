@@ -555,16 +555,91 @@ body{
 
 
 /* Info Page */
+.infopage {
+  min-height: 100vh;
+  background: url(./img/bgc-membership.jpg)
+  no-repeat center center/cover;
+  color: #979797;
+}
+
+.infopage h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.infopage p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.infopage a{
+  color: #979797;
+  text-decoration: none;
+  border: 1px solid #242424;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.infopage a:hover{
+  background-color: #242424;
+  color: crimson;
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 /* End of Info Page */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
 /* All_members */
-.profiles {
+.membership .profiles {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 2px solid crimson;
 }
 
+.membership {
+  min-height: 100vh;
+  background: url(./img/bgc-membership.jpg)
+  no-repeat center center/cover;
+  color: #f0f0f0;
+}
+
+.membership h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  color: #979797;
+}
+
+.membership  ul{
+ margin-left: 600px;
+ list-style-type: none;
+}
+
+.membership a{
+  color: #979797;
+  text-decoration: none;
+  margin-left: 30px;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.membership a:hover{
+  color: crimson;
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.membership li{
+  display: flex;
+}
 /* End of All_members */
 /* --------------------------------------------------------------------------------------------------------------------- */

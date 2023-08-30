@@ -5,15 +5,16 @@
 {% block title %} Membership {% endblock %} 
 
 {% block content %}
-
+<section class="membership">
 <h1>Membership</h1>
 
 <ul>
   {% for x in mymembers %}
   <li>
-    <span><img class="profiles" src="{% static 'img/2 (4).JPG' %}" alt=""/></span>
-    {{ x.firstname }} {{ x.lastname }} <a href="info/{{ x.id }}">more</a>
+    <span><img class="profiles" src="{% static 'img/youtubrlogoo.png' %}" alt=""/></span>
+     <a href="info/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a>
   </li>
   {% endfor %}
 </ul>
+</section>
 {% endblock %}
